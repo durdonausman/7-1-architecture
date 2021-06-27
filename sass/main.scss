@@ -1,33 +1,38 @@
 // Abstracts
-@import './abstracts/variables';
-@import './abstracts/utils';
-@import './abstracts/mixins';
+@import "./abstracts/variables";
+@import "./abstracts/utils";
+@import "./abstracts/mixins";
 // Base
-@import './base/base';
-@import './base/typography';
-@import './base/normalize';
+@import "./base/base";
+@import "./base/typography";
+@import "./base/normalize";
 
 // COMPONENTS
-@import './components/btn';
-@import './components/card';
-@import './components/dropdown';
+@import "./components/btn";
+@import "./components/card";
+@import "./components/dropdown";
 
 // LAYOUT
-@import './layout/header';
-@import './layout/nav';
-@import './layout/footer';
-@import './layout/forms';
-@import './layout/list';
+@import "./layout/header";
+@import "./layout/nav";
+@import "./layout/footer";
+@import "./layout/forms";
+@import "./layout/list";
+@import "./layout/modals";
 
 // PAGES
-@import './pages/home';
-@import './pages/about';
-@import './pages/contact';
+@import "./pages/home";
+@import "./pages/headphone";
+@import "./pages/speakers";
+@import "./pages/earphones";
+@import "./pages/headphones-1";
+@import "./pages/headphones-2";
+@import "./pages/headphones-3";
 
 // THEMES
-@import './themes/theme';
-@import './themes/dark';
+@import "./themes/theme";
+@import "./themes/dark";
 
 // VENDORS
-@import './vendors/bootstrap';
-@import './vendors/semantic-ui';
+@import "./vendors/bootstrap";
+@import "./vendors/semantic-ui";

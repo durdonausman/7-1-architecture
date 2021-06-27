@@ -1,0 +1,15 @@
+.speakers__intro {
+   background-color: $color-black;
+  padding-top: 3.2rem;
+  padding-bottom: 9.7rem;
+
+  &-heading {
+    margin-top: 9.8rem;
+    font-size: 4rem;
+    line-height: 4.4rem;
+    text-align: center;
+    letter-spacing: 1.42857px;
+    text-transform: uppercase;
+    color: $color-white;
+  }
+}

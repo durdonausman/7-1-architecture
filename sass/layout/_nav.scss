@@ -1,0 +1,72 @@
+.hamburger-menu {
+  display: none;
+
+  @include respond(tab-port) {
+    &:checked + label .hamburger {
+      visibility: hidden;
+    }
+
+    &:checked + label .hamburger::before {
+      top: 0;
+      transform: rotate(135deg);
+      visibility: visible;
+    }
+
+    &:checked + label .hamburger::after {
+      top: 0;
+      transform: rotate(-135deg);
+      visibility: visible;
+    }
+  }
+}
+
+.hamburger {
+  display: inline-block;
+  width: 16px;
+  height: 3px;
+  position: relative;
+  background-color: $color-white;
+
+  display: none;
+
+  @include respond(tab-port) {
+    display: inline-block;
+  }
+
+  @include respond(phopnes) {
+    display: inline-block;
+  }
+}
+
+.hamburger::before,
+.hamburger::after {
+  content: "";
+  display: inline-block;
+  width: 100%;
+  height: 3px;
+  position: absolute;
+  background-color: inherit;
+
+  transition: all 0.3s;
+}
+
+.hamburger::after {
+  top: -5px;
+}
+
+.hamburger::before {
+  top: 5px;
+}
+
+.respond-wrapper {
+  @include respond(tab-port) {
+    display: flex;
+    align-items: center;
+  }
+}
+
+.nav-logo {
+  @include respond(tab-port) {
+    margin-left: 4.2rem;
+  }
+}

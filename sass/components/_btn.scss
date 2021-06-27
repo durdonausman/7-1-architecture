@@ -1,0 +1,59 @@
+.btn {
+  display: inline-block;
+  text-decoration: none;
+  padding: 1.5rem 2.9rem 1.5rem 3.1rem;
+  color: $color-white;
+  background-color: $color-4a;
+  font-size: 1.3rem;
+  line-height: 1.8rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+
+  &__orange {
+    margin-top: 4rem;
+
+    @include respond(tab-port) {
+        margin-top: 0;
+      }
+
+    &:hover,
+    &:active {
+      background-color: #fbaf85;
+    }
+
+    &--pay {
+      width: 100%;
+      text-align: center;
+
+      @include respond(tab-port) {
+        margin-top: 3.2rem;
+      }
+    }
+  }
+
+  &__dark {
+    background-color: $color-black;
+
+    @include respond(tab-port) {
+      width: 16rem;
+
+    }
+
+    &:hover,
+    &:active {
+      background-color: #4C4C4C;
+    }
+  }
+
+  &__light {
+    border: 1px solid $color-black;
+    background-color: transparent;
+    color: $color-black;
+
+    &:hover,
+    &:active {
+      background-color: $color-black;
+      color: $color-white;
+    }
+  }
+}

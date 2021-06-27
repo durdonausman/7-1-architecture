@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>checkout</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <section class="headphones-1__intro">
+      <header class="header">
+        <div class="container">
+          <nav class="nav">
+            <a href="#">
+              <img
+                class="logo"
+                srcset="
+                  ./images/audiophile.png    1x,
+                  ./images/audiophile@2x.png 2x
+                "
+                src="./images/audiophile.png"
+                alt=""
+              />
+            </a>
+            <ul class="list">
+              <li class="list__item">
+                <a class="list__link" href="#">Home</a>
+              </li>
+              <li class="list__item">
+                <a class="list__link" href="#">HEADPHONES</a>
+              </li>
+              <li class="list__item">
+                <a class="list__link" href="#">SPEAKERS</a>
+              </li>
+              <li class="list__item">
+                <a class="list__link" href="#">EARPHONES</a>
+              </li>
+            </ul>
+            <a href="#"
+              ><img
+                class="nav__img"
+                srcset="./images/cart.png 1x, ./images/cart@2x.png 2x"
+                src="./images/cart.png"
+                width="24"
+                height="20"
+                alt=""
+            /></a>
+          </nav>
+        </div>
+      </header>
+    </section>
+
+    <section class="checkout">
+      <div class="container">
+        <a class="mark-2-features__link" href="./headphone.html">Go Back</a>
+        <div class="checkout-wrapper">
+          <form class="form" action="GET">
+            <h2 class="form__heading-primary">CHECKOUT</h2>
+            <div class="form__billing">
+              <h4 class="form__heading-secondary">Billing Details</h4>
+              <div class="form__billing-top">
+                <div class="input-group">
+                  <p class="input-group__name">Name</p>
+                  <input
+                    class="input-group-text"
+                    placeholder="Alexei Ward"
+                    type="text"
+                    name="name"
+                    id=""
+                    required
+                  />
+                </div>
+                <div class="input-group">
+                  <p class="input-group__name">Email Address</p>
+                  <input
+                    placeholder="alexei@mail.com"
+                    type="email"
+                    name="email"
+                    id=""
+                    required
+                  />
+                </div>
+              </div>
+              <div class="input-group">
+                <p class="input-group__name">Phone Number</p>
+                <input
+                  placeholder="+1 202-555-0136"
+                  type="tel"
+                  name="tel"
+                  id=""
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="form__info">
+              <h4 class="form__heading-secondary">shipping info</h4>
+              <div class="input-group">
+                <p class="input-group__name">Address</p>
+                <input
+                  class="input-group-text input-group-address"
+                  placeholder="1137 Williams Avenue"
+                  type="text"
+                  id=""
+                  required
+                />
+              </div>
+              <div class="form__billing-top">
+                <div class="input-group">
+                  <p class="input-group__name">ZIP Code</p>
+                  <input
+                    class="input-group-text"
+                    placeholder="10001"
+                    type="number"
+                    name="zip"
+                    id=""
+                    required
+                  />
+                </div>
+                <div class="input-group">
+                  <p class="input-group__name">City</p>
+                  <input placeholder="New York" type="text" name="city" id="" />
+                </div>
+              </div>
+              <div class="input-group">
+                <p class="input-group__name">Country</p>
+                <input
+                  placeholder="United States"
+                  type="text"
+                  name="country"
+                  id=""
+                  required
+                />
+              </div>
+            </div>
+
+            <div class="form__payment">
+              <h4 class="form__heading-secondary">payment details</h4>
+              <div class="form__payment-detailes">
+                <p class="input-group__name">Payment Method</p>
+                <div class="form__inputs">
+                  <label class="form__label">
+                    <input type="radio" name="radio-button" value="" checked / required>
+                    <span class="form__label-text">e-Money</span>
+                  </label>
+                  <label class="form__label">
+                    <input type="radio" name="radio-button" value="" / required>
+                    <span class="form__label-text">Cash on Delivery</span>
+                  </label>
+                </div>
+              </div>
+              <div class="form__billing-top form__payment-bottom">
+                <div class="input-group">
+                  <p class="input-group__name">e-Money Number</p>
+                  <input
+                    class="input-group-text"
+                    placeholder="238521993"
+                    type="text"
+                    name="zip"
+                    id=""
+                    required
+                  />
+                </div>
+                <div class="input-group">
+                  <p class="input-group__name">e-Money PIN</p>
+                  <input placeholder="6891" type="text" name="text" id="" />
+                </div>
+              </div>
+            </div>
+          </form>
+          <div class="summary">
+            <h3 class="summary__heading">summary</h3>
+            <div class="summary__products">
+              <div class="summary__products-product">
+                <div class="summary__products-product-img">
+                  <img
+                    src="./images/headphone-1.png"
+                    width="36"
+                    height="40"
+                    alt=""
+                    required
+                  />
+                </div>
+                <div class="summary__products-product-mark">
+                  <h2 class="summary__products-product-heading">XX99 MK II</h2>
+                  <span class="summary__products-product-sum">$ 2,999</span>
+                </div>
+              </div>
+              <span class="summary__products-product-speed">x1</span>
+            </div>
+
+            <div class="summary__products">
+              <div class="summary__products-product">
+                <div class="summary__products-product-img">
+                  <img
+                    src="./images/white-headphone.png"
+                    width="38"
+                    height="40"
+                    alt=""
+                  />
+                </div>
+                <div class="summary__products-product-mark">
+                  <h2 class="summary__products-product-heading">XX59</h2>
+                  <span class="summary__products-product-sum">$ 899</span>
+                </div>
+              </div>
+              <span class="summary__products-product-speed">x2</span>
+            </div>
+
+            <div class="summary__products">
+              <div class="summary__products-product">
+                <div class="summary__products-product-img">
+                  <img
+                    src="./images/earphone.png"
+                    width="44"
+                    height="40"
+                    alt=""
+                  />
+                </div>
+                <div class="summary__products-product-mark">
+                  <h2 class="summary__products-product-heading">YX1</h2>
+                  <span class="summary__products-product-sum">$ 599</span>
+                </div>
+              </div>
+              <span class="summary__products-product-speed">x1</span>
+            </div>
+            <div class="summary__bottom">
+              <span class="summary__bottom-price">
+                <p class="summary__bottom-price-name">TOTAL</p>
+                <p class="summary__bottom-price-sum">$ 5,396</p>
+              </span>
+              <span class="summary__bottom-price">
+                <p class="summary__bottom-price-name">SHIPPING</p>
+                <p class="summary__bottom-price-sum">$ 50</p>
+              </span>
+              <span class="summary__bottom-price">
+                <p class="summary__bottom-price-name">VAT (INCLUDED)</p>
+                <p class="summary__bottom-price-sum">$ 1,079</p>
+              </span>
+              <span class="summary__bottom-price">
+                <p class="summary__bottom-price-name">GRAND TOTAL</p>
+                <p class="summary__bottom-price-sum">$ 5,446</p>
+              </span>
+              <a class="btn btn__orange btn__orange--pay" href="#modal"
+                >CONTINUE & PAY</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__left">
+          <a href="#">
+            <img
+              class="logo"
+              srcset="./images/audiophile.png 1x, ./images/audiophile@2x.png 2x"
+              src="./images/audiophile.png"
+              alt=""
+              width="143"
+              height="25"
+            />
+          </a>
+          <ul class="list list--1">
+            <li class="list__item">
+              <a class="list__link list--link" href="#">Home</a>
+            </li>
+            <li class="list__item">
+              <a class="list__link" href="#">HEADPHONES</a>
+            </li>
+            <li class="list__item">
+              <a class="list__link" href="#">SPEAKERS</a>
+            </li>
+            <li class="list__item">
+              <a class="list__link" href="#">EARPHONES</a>
+            </li>
+          </ul>
+        </div>
+        <p class="footer__left-text">
+          Audiophile is an all in one stop to fulfill your audio needs. We're a
+          small team of music lovers and sound specialists who are devoted to
+          helping you get the most out of personal audio. Come and visit our
+          demo facility - we’re open 7 days a week.
+        </p>
+
+        <div class="footer__right">
+          <p class="footer__left-copyright">
+            Copyright 2021. All Rights Reserved
+          </p>
+          <span class="footer__right-socials">
+            <img
+              class="footer__right-link"
+              src="./images/facebook.png"
+              width="24"
+              height="24"
+              alt=""
+            />
+            <img
+              class="footer__right-link"
+              src="./images/twitter.png"
+              width="24"
+              height="20"
+              alt=""
+            />
+            <img
+              class="footer__right-link"
+              src="./images/instagram.png"
+              width="24"
+              height="24"
+              alt=""
+            />
+          </span>
+        </div>
+      </div>
+    </footer>
+
+    <section class="modal" id="modal">
+      <div class="container">
+        <div class="modal__icon">
+          <img src="./images/true.png" width="23" height="16" alt="" />
+        </div>
+        <h2 class="modal__heading">THANK YOU FOR YOUR ORDER</h2>
+        <p class="modal__text">
+          You will receive an email confirmation shortly.
+        </p>
+        <div class="modal__card">
+          <div class="modal__card-left">
+            <div class="modal__card-left-main">
+              <img
+                src="./images/headphone-1.png"
+                width="28"
+                height="32"
+                alt=""
+              />
+              <div class="modal__card-left-product">
+                <h3 class="modal__card-left-product-name">XX99 MK II</h3>
+                <span class="modal__card-left-product-price">$ 2,999</span>
+              </div>
+              <span class="modal__card-left-number">x1</span>
+            </div>
+            <hr class="modal__card-left-line" />
+            <p class="modal__card-left-text">and 2 other item(s)</p>
+          </div>
+
+          <div class="modal__card-right">
+            <p class="modal__card-right-name">GRAND TOTAL</p>
+            <span class="modal__card-right-price">$ 5,446</span>
+          </div>
+        </div>
+        <a class="btn btn__orange btn__orange--pay" href="./index.html"
+          >BACK TO HOME</a
+        >
+      </div>
+    </section>
+  </body>
+</html>
